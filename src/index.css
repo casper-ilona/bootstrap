@@ -56,7 +56,24 @@ nav {
     /*display:none;*/
 }
 .mw-100{
-    max-width: 100%;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.advantages {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.advantages__item {
+    width: 30%;
+
 }
 
 @media screen and (max-width: 768px) {
