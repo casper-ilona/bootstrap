@@ -112,11 +112,21 @@ main {
         text-align: left;
     }
 
-
+    .advantages__item {
+        width: 30%;
+    }
 }
 
-.advantages__item {
-    width: 30%;
+@media screen and (max-width: 1100px) {
+    .gallery {
+        width: 542px !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .gallery {
+        width: 271px !important;
+    }
 }
 
 /* TODO: почитать про медиа-запросы, в частности screen */
@@ -128,8 +138,10 @@ main {
     .advantages__item {
         width: 100%;
     }
+
 }
-footer p{
+
+footer p {
     color: white;
 }
 
@@ -151,13 +163,41 @@ footer a {
 footer nav a:hover {
     border-bottom: 1px solid white;
 }
+
 .social img {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
 .social img:hover {
     background: #494949;
     border-radius: 50%;
 }
+
+.gallery {
+    width: 1084px;
+    /*width: 100%;*/
+    display: flex;
+    margin: 0 auto 250px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 271px;
+    height: 167px;
+    /*margin-bottom: 250px;*/
+}
+
+.photo-item img {
+    box-sizing: border-box;
+    max-width: 100%;
+    opacity: 0.7;
+}
+
+.photo-item img:hover {
+    opacity: 1;
+}
+
 
 
